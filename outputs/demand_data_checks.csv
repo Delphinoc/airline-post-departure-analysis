@@ -1,0 +1,6 @@
+check,value,passed
+Months in series,198,True
+Missing months,0,True
+Null values,0,True
+Non-positive values,0,True
+Duplicate dates,0,True
