@@ -1,0 +1,12 @@
+check_name,severity,description,failing_rows
+null_keys,exclude,"Carrier, origin, destination or month is missing",0
+exact_duplicates,exclude,Fully identical rows (double-loaded records),0
+passengers_without_seats,exclude,Passengers reported but zero seats,0
+seats_without_departures,exclude,Seats reported but zero departures performed,0
+passengers_exceed_seats,flag,Row-level load factor above 100%,10
+aircraft_swap_rows,flag,Departures performed on an aircraft type with zero scheduled (equipment swap),13886
+route_month_performed_exceeds_scheduled,flag,Route-months (all aircraft types) with more departures performed than scheduled,9286
+implausible_seats_per_departure,flag,Average seats per departure below 2 or above 550,321
+origin_equals_destination,flag,Segment starts and ends at the same airport (sightseeing / return-to-origin),1655
+inconsistent_route_distance,flag,Rows on an airport pair reported with more than one distance,0
+quarter_month_mismatch,exclude,Quarter field disagrees with month,0
