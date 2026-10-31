@@ -1,0 +1,7 @@
+holdout,model,mape_pct,bias_pct
+2019,Seasonal naive,4.1,-4.1
+2019,SARIMA airline model,1.23,-0.74
+2019,"SARIMAX(2, 1, 0)(0, 1, 1) + Easter",1.22,-0.56
+Jul 2025 - Jun 2026,Seasonal naive,1.43,0.56
+Jul 2025 - Jun 2026,SARIMA airline model,1.9,1.56
+Jul 2025 - Jun 2026,"SARIMAX(2, 1, 0)(0, 1, 1) + Easter",1.96,1.6
